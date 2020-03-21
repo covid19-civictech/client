@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { Container, Grid, Image } from 'semantic-ui-react';
+import { Container, Grid, Image, List } from 'semantic-ui-react';
 
 import styled from 'styled-components/macro';
 
@@ -22,7 +22,25 @@ const Footer = () => {
               <Image src={logoHackathon} style={{ width: 250 }} />
             </Grid.Column>
             <Grid.Column />
-            <Grid.Column />
+            <Grid.Column>
+              <List>
+                <List.Item header>Join us on</List.Item>
+                <List.Item>
+                  <List.Icon name="github" />
+                  <List.Content>
+                    <a href="https://github.com/covid19-civictech">Github</a>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="slack" />
+                  <List.Content>
+                    <a href="https://join.slack.com/t/covid-19civictech/shared_invite/zt-cz5jx2np-FweuQCaxTTZQUWW7a1GAyA">
+                      Slack
+                    </a>
+                  </List.Content>
+                </List.Item>
+              </List>
+            </Grid.Column>
           </Grid.Row>
         </Grid>
       </Container>
