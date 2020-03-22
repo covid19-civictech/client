@@ -1,3 +1,14 @@
+## Docker build
+The [Dockerfile](Dockerfile) will build your application using `yarn install && yarn build` 
+In a second stage the `build` folder is added to a plain `nginx` image.
+
+```
+docker build -t client . 
+docker run -tid -p 8080:80 client
+```
+The page will be available via `http://localhost:8080/` 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
